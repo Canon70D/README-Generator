@@ -7,8 +7,8 @@ const generateMarkdown = require("./utils/generateMarkdown");
 const questions = [
   {
     type: "input",
-    name: "projectTitle",
-    message: "Please enter  the title of the project",
+    name: "title",
+    message: "Please enter the title of the project",
   },
   {
     type: "input",
@@ -39,7 +39,15 @@ const questions = [
     type: "list",
     name: "license",
     message: "Please chose the license for the project",
-    choices: ["Apache", "Academic", "GUN", "ISC", "MIT", "Mozilla", "open"],
+    choices: [
+      "GUNAGPLv3",
+      "GUNGPLv3",
+      "GUNLGPLv3",
+      "Mozilla",
+      "Apache",
+      "MIT",
+      "None",
+    ],
   },
   {
     type: "input",
