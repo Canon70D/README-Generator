@@ -76,7 +76,7 @@ function generateMarkdown(data) {
     - ${data.usage}
 
   ## Contribution Guidelines
-  ### ${data.contribution}
+    - ${data.contribution}
 
   ## Test Instructions
   ### In your terminal, run the following commands to Test
@@ -86,7 +86,7 @@ function generateMarkdown(data) {
 
   ## Questions
   ### Github: https://github.com/${data.username}
-  ### Any additional questions, please email me: ${data.email}
+    - Any additional questions, please email me: ${data.email}
   `;
 }
 
