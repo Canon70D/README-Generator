@@ -4,16 +4,16 @@ function renderLicenseBadge(license) {
   if (license != "None") {
     const badges = {
       GUNAGPLv3:
-        "![License: GUNAGPLv3](https://img.shields.io/badge/License-GUNAGPLv3-orange.svg)",
+        "[![License: GUNAGPLv3](https://img.shields.io/badge/License-GUNAGPLv3-orange.svg)](https://choosealicense.com/licenses/agpl-3.0/)",
       GUNGPLv3:
-        "![License: GUNGPLv3](https://img.shields.io/badge/License-GUNGPLv3-green.svg)",
+        "[![License: GUNGPLv3](https://img.shields.io/badge/License-GUNGPLv3-green.svg)](https://choosealicense.com/licenses/gpl-3.0/)",
       GUNLGPLv3:
-        "![License: GUNLGPLv3](https://img.shields.io/badge/License-GUNLGPLv3-red.svg)",
+        "[![License: GUNLGPLv3](https://img.shields.io/badge/License-GUNLGPLv3-red.svg)](https://choosealicense.com/licenses/lgpl-3.0/)",
       Mozilla:
-        "![License: Mozilla](https://img.shields.io/badge/License-Mozilla-blue.svg)",
+        "[![License: Mozilla](https://img.shields.io/badge/License-Mozilla-blue.svg)](https://choosealicense.com/licenses/mpl-2.0/)",
       Apache:
-        "![License: Apache](https://img.shields.io/badge/License-Apache-brightgreen.svg)",
-      MIT: "![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)",
+        "[![License: Apache](https://img.shields.io/badge/License-Apache-brightgreen.svg)](https://choosealicense.com/licenses/apache-2.0/)",
+      MIT: "[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://choosealicense.com/licenses/mit/)",
     };
     return badges[license];
   } else {
@@ -26,12 +26,12 @@ function renderLicenseBadge(license) {
 function renderLicenseLink(license) {
   if (license != "None") {
     const links = {
-      GUNAGPLv3: "https://choosealicense.com/licenses/agpl-3.0/",
-      GUNGPLv3: "https://choosealicense.com/licenses/gpl-3.0/",
-      GUNLGPLv3: "https://choosealicense.com/licenses/lgpl-3.0/",
-      Mozilla: "https://choosealicense.com/licenses/mpl-2.0/",
-      Apache: "https://choosealicense.com/licenses/apache-2.0/",
-      MIT: "https://choosealicense.com/licenses/mit/",
+      GUNAGPLv3: "[GUNAGPLv3](https://choosealicense.com/licenses/agpl-3.0/)",
+      GUNGPLv3: "[GUNGPLv3](https://choosealicense.com/licenses/gpl-3.0/)",
+      GUNLGPLv3: "[GUNLGPLv3](https://choosealicense.com/licenses/lgpl-3.0/)",
+      Mozilla: "[Mozilla](https://choosealicense.com/licenses/mpl-2.0/)",
+      Apache: "[Apache](https://choosealicense.com/licenses/apache-2.0/)",
+      MIT: "[MIT](https://choosealicense.com/licenses/mit/)",
     };
     return links[license];
   } else {
@@ -44,7 +44,8 @@ function renderLicenseLink(license) {
 function renderLicenseSection(license) {
   if (license != "None") {
     return `## License
-    The project is licensed under the ${renderLicenseLink(license)} license.`;
+
+### The project is licensed under the ${renderLicenseLink(license)} license.`;
   } else {
     return "";
   }

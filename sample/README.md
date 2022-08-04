@@ -1,6 +1,6 @@
 # sample README.md file
 
-  ![License: Apache](https://img.shields.io/badge/License-Apache-brightgreen.svg)
+  [![License: Mozilla](https://img.shields.io/badge/License-Mozilla-blue.svg)](https://choosealicense.com/licenses/mpl-2.0/)
 
   ## Description
     This is a sample README.md file for the project repository generated using this application
@@ -29,7 +29,8 @@
     - N/A
 
   ## License
-    The project is licensed under the https://choosealicense.com/licenses/apache-2.0/ license.
+
+### The project is licensed under the [Mozilla](https://choosealicense.com/licenses/mpl-2.0/) license.
 
   ## Questions
   ### Github: https://github.com/Canon70D
